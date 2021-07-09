@@ -26,6 +26,7 @@ public class SingletonTest {
         System.out.println("memberService2 = " + memberService2);
 
         // memberService1 != memberService2
+        // assrtThat 쓰는 이유는 자동화를 하기 위함이다.
         assertThat(memberService1).isNotSameAs(memberService2);
     }
 
