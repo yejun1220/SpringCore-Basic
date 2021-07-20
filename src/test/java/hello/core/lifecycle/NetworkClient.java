@@ -3,6 +3,8 @@ package hello.core.lifecycle;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+// 자체적으로 내부 코드를 고칠 수 있으므로 자바 표준을 쓰는 것이 좋다.
+// 외부 라이브러리를 가져와 내부 코드를 고칠 수 없을 때는 Test 코드에 Bean을 등록하여 init, destory 메소드를 지정해주면 된다.
 public class NetworkClient {
 
     private String url;
